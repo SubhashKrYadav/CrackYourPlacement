@@ -97,9 +97,6 @@ class Solution
                 for(int j=0;j<currWord.length();j++){
                     char original = currWord.charAt(j);
                     for(char ch='a';ch<='z';ch++){
-                        // char[] replacedArr = word.toCharArray();
-                        // replacedArr[j] = ch;
-                        // String replacedStr = new String(replacedArr);
                         currWord.setCharAt(j, ch);
                         if(set.contains(currWord.toString())){
                             ArrayList<String> temp = new ArrayList<>(currList);
